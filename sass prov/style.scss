@@ -1,0 +1,25 @@
+$piramry-color: orange;
+
+
+@mixin button-style {
+    border-radius: 5px;
+    background-color: aqua
+}
+
+@mixin heading-style {
+    color: red;
+    background-color: bisque;
+}
+
+button {
+    @include button-style();
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include heading-style();
+}
+
+p {
+    color: $piramry-color;
+}
+
